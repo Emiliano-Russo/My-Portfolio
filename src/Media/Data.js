@@ -1,22 +1,14 @@
-import HideNSeek from "./HnS.png";
-import CrazyBird from "./crazybird.png";
-import ScapeBallHane from "./ScapeBallHane.jpg";
-import Ministerio from "./MinisterioDeSaludPublica.JPG";
-import PenguinCharts from "./PenguinCharts.JPG";
-import PenguinBot from "./penguinBot.png";
 
 export const data = {
 	HideNSeek: {
 		name: "Hide N Seek",
 		typeOfProject: "Unity",
-		img: HideNSeek,
 		description:
 			"My last game, this is about terror and persecution, as an escapist you have to collect the 4 totems of the map, if you play as the ogre you will want to capture all the escapists. It is an online game, which uses photonengine services.",
 		link: "https://www.mediafire.com/file/ss31x5d195yt5z7/Hide+n+Seek.rar/file",
 	},
 	CrazyBird: {
 		name: "Crazy Bird",
-		img: CrazyBird,
 		typeOfProject: "Unity",
 		description:
 			"My favorite game, this crazy bird has to dodge all the cars that pass in the city, and collect markers, all this to have a good score on time. It is not in the PlayStore due to copyright regulations.",
@@ -24,7 +16,6 @@ export const data = {
 	},
 	ScapeBallHane: {
 		name: "Scape Ball Hane",
-		img: ScapeBallHane,
 		typeOfProject: "Unity",
 		description:
 			"This type of game is called Hyper Casual game, which is liked for its playable simplicity. This game is about a Hane entity that has to endure against many projectiles, thus achieving better punctuation over time.",
@@ -32,7 +23,6 @@ export const data = {
 	},
 	MinisterioSalud: {
 		name: "Ministerio de Salud (Academic Project)",
-		img: Ministerio,
 		typeOfProject: "Angular + ASP.NET",
 		description:
 			"An academic project that incorporates front-end and back-end technology. The development methodology was TDD. It has functionalities of the playlist style (music and videos), in another section it has agendas with psychologists. Everything is in spanish.",
@@ -40,14 +30,12 @@ export const data = {
 	},
 	PenguinCharts: {
 		name: "Penguin Charts",
-		img: PenguinCharts,
 		typeOfProject: "React",
-		description: "Penguin Charts is a user interface that brings and processes the data saved by penguin bot, to view it in a graph.",
+		description: "Penguin Charts is a user interface that brings and processes the data saved by penguin bot, to view it in a graph (empowered by Chart.js)",
 		link: "https://penguincharts.netlify.app/",
 	},
 	PenguinBot: {
 		name: "Penguin Discord Bot",
-		img: PenguinBot,
 		typeOfProject: "NodeJS",
 		description:
 			"This is my first discord bot officially finished by me, its function is to collect data from the discord server it is on, especially the activity of the users, to later visualize the data in a graph, delegating that task to penguin charts (Data is stored in firebase).",

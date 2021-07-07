@@ -1,12 +1,12 @@
-#Content {
-	height: 100%;
+#CentralContent {
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	font-size: 30px;
 }
 
-#Content img {
+#CentralContent img {
 	height: 10rem;
 	max-width: 12rem;
 	border-radius: 100px;
@@ -15,11 +15,24 @@
 	box-shadow: 10px 10px 5px rgb(24, 24, 24);
 }
 
+#AboutMe{
+	max-width: 60rem;
+	margin: 5rem auto;
+	padding: 1rem;
+	text-align: center;
+}
+
+#AboutMe h4{
+	text-decoration: underline;
+	text-decoration-color: tomato;
+}
+
 .themeBlack {
 	background: #000000; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: yellow;
+	color: turquoise;
+	height: 100%;
 }
 
 .themeWhite {
@@ -27,16 +40,22 @@
 	background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #cfdef3, #e0eafc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: black;
+	height: 100%;
 }
 
 #Info {
 	margin-top: 10rem;
 }
 
+#Info h1 {
+	color: tomato;
+}
+
 button {
 	width: max-content;
 	height: max-content;
 	margin-top: 2rem;
+	margin-left: 4rem;
 	font-family: "Roboto Mono", monospace;
 	transform: rotate(-0.05turn);
 	cursor: pointer;
@@ -44,8 +63,8 @@ button {
 
 .themeBlack button {
 	background-color: transparent;
-	color: yellow;
-	border: 1px solid yellow;
+	color: turquoise;
+	border: 1px solid turquoise;
 }
 
 .themeBlack button:hover {
@@ -53,7 +72,7 @@ button {
 }
 
 .themeWhite button {
-	background-color: yellow;
+	background-color: turquoise;
 	color: black;
 	border: 1px solid black;
 }

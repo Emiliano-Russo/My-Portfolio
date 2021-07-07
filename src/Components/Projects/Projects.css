@@ -1,6 +1,9 @@
 #Projects {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
+	flex-basis: 33.333333%;
 	align-items: center;
+	min-height: 100%;
 }

@@ -7,6 +7,14 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 10px;
+	margin-right: 10px;
+	border: 2px solid tomato;
+	padding: 1rem;
+	text-align: center;
+}
+
+#ProjectView h4{
+	color: turquoise;
 }
 
 #ProjectView * {
@@ -33,7 +41,7 @@
 
 a {
 	text-decoration: none;
-	color: yellow;
+	color: turquoise;
 }
 
 #Description {
@@ -41,6 +49,7 @@ a {
 	width: 20rem;
 	overflow-y: scroll;
 	overflow-y: hidden;
+	color: white;
 }
 
 #Presentation * {

@@ -12,7 +12,6 @@ class ProjectView extends Component {
 				<h4>{this.props.name}</h4>
 				<h5>Type of project: {this.props.typeOfProject}</h5>
 				<div id="Presentation">
-					<img src={this.props.img} alt="Project"></img>
 					<div id="Information">
 						<p id="Description">{this.props.description}</p>
 						{extenralLink}
