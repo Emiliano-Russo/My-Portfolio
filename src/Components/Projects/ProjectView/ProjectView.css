@@ -1,0 +1,48 @@
+#ProjectView {
+	width: max-content;
+	background: transparent;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+#ProjectView * {
+	margin: 0;
+}
+
+#Presentation {
+	border-bottom: 1px solid white;
+	width: 25rem;
+	height: 15rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 1rem;
+	padding: 0.3rem;
+}
+
+#ProjectView img {
+	max-height: 10rem;
+	width: 8rem;
+	padding: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: yellow;
+}
+
+#Description {
+	height: 12rem;
+	width: 20rem;
+	overflow-y: scroll;
+	overflow-y: hidden;
+}
+
+#Presentation * {
+	margin: 0.3rem;
+}

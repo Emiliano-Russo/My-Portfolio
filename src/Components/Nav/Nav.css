@@ -1,0 +1,33 @@
+.Navegacion {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2rem;
+	background-color: rgb(24, 24, 24);
+}
+
+.Navegacion img {
+	width: 3rem;
+}
+
+.Navegacion a {
+	text-decoration: none;
+	margin: 2rem;
+	color: white;
+}
+
+.Navegacion a:hover {
+	color: tomato;
+}
+
+.Navegacion button {
+	background-color: transparent;
+	border: none;
+	color: cornflowerblue;
+	margin: 1rem 0rem;
+}
+
+.Navegacion button:hover {
+	cursor: pointer;
+	color: crimson;
+}
