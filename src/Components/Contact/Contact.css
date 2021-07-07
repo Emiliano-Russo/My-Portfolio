@@ -4,7 +4,6 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	border: 1px solid black;
 	background: #000000; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -37,4 +36,38 @@
 
 .linkSocial p {
 	font-size: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+	.linkSocial p {
+		font-size: 30px;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.linkSocial p {
+		font-size: 20px;
+	}
+}
+
+#linkedin {
+	text-decoration: underline;
+	text-decoration-color: turquoise;
+}
+
+#linkedin:hover {
+	color: turquoise;
+}
+
+#github:hover {
+	color: blueviolet;
+}
+
+#github {
+	text-decoration: underline;
+	text-decoration-color: blueviolet;
+}
+
+#mail {
+	text-decoration: underline;
+	text-decoration-color: tomato;
 }

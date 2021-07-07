@@ -6,10 +6,14 @@ class Contact extends Component {
 		const jsx = (
 			<div id="Contact">
 				<div className="linkSocial">
-					<a href="https://www.linkedin.com/in/russo-emiliano">LinkedIn</a>
+					<a id="linkedin" href="https://www.linkedin.com/in/russo-emiliano">
+						LinkedIn
+					</a>
 				</div>
 				<div className="linkSocial">
-					<a href="https://github.com/Emiliano-Russo">GitHub</a>
+					<a id="github" href="https://github.com/Emiliano-Russo">
+						GitHub
+					</a>
 				</div>
 				<div className="linkSocial">
 					<p id="mail">emiliano.russo@outlook.com</p>
