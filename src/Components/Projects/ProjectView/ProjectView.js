@@ -2,10 +2,19 @@ import { Component } from "react";
 import "./ProjectView.css";
 
 class ProjectView extends Component {
+	openInNewTab = (url) => {
+		const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+		if (newWindow) newWindow.opener = null;
+	};
+
 	render() {
 		let extenralLink = null;
 		if (this.props.link !== undefined) {
-			extenralLink = <a href={this.props.link}>More details</a>;
+			extenralLink = (
+				<a onClick={() => this.openInNewTab(this.props.link)} href="#">
+					More details
+				</a>
+			);
 		}
 		const jsx = (
 			<div id="ProjectView">
