@@ -31,3 +31,14 @@
 	cursor: pointer;
 	color: crimson;
 }
+
+@media only screen and (orientation: portrait) {
+	.Navegacion {
+		overflow: auto;
+	}
+
+	.Navegacion a {
+		font-size: 14px;
+		margin: 1rem;
+	}
+}

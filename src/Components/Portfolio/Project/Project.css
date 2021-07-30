@@ -53,3 +53,26 @@
 	transition: 0.3s;
 	background-color: transparent;
 }
+
+@media only screen and (orientation: portrait) {
+	.Project {
+		flex-direction: column;
+		width: 80%;
+		height: 30rem;
+		margin-bottom: 1rem;
+		border: 1px solid white;
+	}
+
+	#Content h1 {
+		margin: 0;
+		font-size: 15px;
+	}
+
+	.Project img {
+		display: none;
+	}
+
+	.Project p {
+		width: 200px;
+	}
+}

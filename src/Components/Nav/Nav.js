@@ -8,7 +8,7 @@ class Nav extends React.Component {
 				<nav>
 					<a href="#techStack">Skills</a>
 					<a href="#portfolio">Porfolio</a>
-					<a href="#contact">Contact Me</a>
+					<a href="#contact">Contact</a>
 				</nav>
 			</div>
 		);

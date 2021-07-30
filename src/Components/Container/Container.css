@@ -1,4 +1,7 @@
 .container {
-	background-color: black;
-	height: 850px;
+}
+
+.container footer {
+	text-align: center;
+	padding: 2rem;
 }

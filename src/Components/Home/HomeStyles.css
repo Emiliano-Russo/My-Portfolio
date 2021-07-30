@@ -11,7 +11,6 @@
 	border-radius: 100px;
 	margin-top: 15rem;
 	margin-left: 2rem;
-	box-shadow: 10px 10px 5px rgb(24, 24, 24);
 	border: 2px solid turquoise;
 	padding: 6px;
 }
@@ -30,11 +29,10 @@
 }
 
 .themeBlack {
-	background: #000000; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	width: 100%;
 	height: 100%;
+	background: url("../../Media/LinePNG.png") center;
+	background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 600px) {
@@ -43,7 +41,7 @@
 	}
 }
 @media only screen and (max-width: 600px) {
-	img {
+	.themeBlack img {
 		display: none;
 	}
 
@@ -51,14 +49,6 @@
 	h1 {
 		text-align: center;
 	}
-}
-
-.themeWhite {
-	color: tomato;
-	background: #000000; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	height: 100%;
 }
 
 #Info {
@@ -87,16 +77,6 @@ button {
 
 .themeBlack button:hover {
 	color: tomato;
-}
-
-.themeWhite button {
-	background-color: turquoise;
-	color: black;
-	border: 1px solid black;
-}
-
-.themeWhite button:hover {
-	background-color: tomato;
 }
 
 .button {

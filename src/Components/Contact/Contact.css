@@ -93,6 +93,7 @@
 
 #contact p {
 	margin-top: 5rem;
+	text-align: center;
 }
 
 #form input::placeholder {
@@ -142,4 +143,31 @@
 	color: white;
 	cursor: pointer;
 	border: 1px solid white;
+}
+
+@media only screen and (orientation: portrait) {
+	#contact button {
+		width: 10rem;
+		font-size: 15px;
+	}
+
+	#contact {
+		padding: 1rem;
+		font-size: 16px;
+		height: 40rem;
+	}
+
+	#form input {
+		width: 90%;
+	}
+
+	#form textarea {
+		max-width: 90%;
+		min-width: 90%;
+		min-height: 100px;
+	}
+
+	#form #Send {
+		width: 90%;
+	}
 }

@@ -1,5 +1,5 @@
 .techStack {
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,6 +9,7 @@
 
 .stack {
 	display: flex;
+	align-items: center;
 	flex-direction: row;
 	margin-bottom: 4rem;
 }
@@ -21,4 +22,14 @@
 	color: rgb(127, 58, 218);
 	font-size: 20px;
 	margin: auto;
+}
+
+@media only screen and (orientation: portrait) {
+	.techStack {
+		font-size: 18px;
+	}
+
+	.stack {
+		flex-direction: column;
+	}
 }
