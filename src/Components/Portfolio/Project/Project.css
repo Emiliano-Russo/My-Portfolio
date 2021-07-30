@@ -1,0 +1,32 @@
+.Project button {
+	transform: rotate(0);
+}
+
+.Project {
+	border: 1px solid blue;
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	padding: 10px;
+	width: 80%;
+}
+
+.Project img {
+	border: 1px solid red;
+	width: 350px;
+	height: 350px;
+}
+
+.Project #Content {
+	border: 1px solid salmon;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 880px;
+	padding: 0px 20px;
+	height: 350px;
+	text-align: center;
+}

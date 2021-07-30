@@ -47,7 +47,7 @@ class Home extends React.Component {
 					<div id="Info">
 						<p>Hi There!, I'm</p>
 						<h1 style={{ color: this.state.colorX }}>Emiliano Russo</h1>
-						<p>A System Analyst Student.</p>
+						<p>Full-Stack Web Developer.</p>
 					</div>
 					<img
 						src={Photo}
@@ -67,8 +67,8 @@ class Home extends React.Component {
 						About Me
 					</h4>
 					<p>
-						I am from Uruguay, I am passionate about technology and software development. My experience comes mainly from my university, I also have personal projects that I did in my free time, I
-						have experience in several types of developments: videogames, web, desktop. My way of programming is always following Design Patterns, Clean Code and SOLID.
+						I am passionate about technology and software development. My experience comes mainly from my university, I also have personal projects that I did in my free time, I have experience in
+						several types of developments: videogames, web, desktop. My way of programming is always following Design Patterns, Clean Code and SOLID.
 					</p>
 				</div>
 			</div>

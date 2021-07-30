@@ -12,7 +12,8 @@
 	margin-top: 15rem;
 	margin-left: 2rem;
 	box-shadow: 10px 10px 5px rgb(24, 24, 24);
-	border: 5px solid turquoise;
+	border: 2px solid turquoise;
+	padding: 6px;
 }
 
 #AboutMe {

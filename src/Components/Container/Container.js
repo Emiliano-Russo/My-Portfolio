@@ -1,25 +1,19 @@
 import { Component } from "react";
 import Home from "../Home/Home";
-import Projects from "../Projects/Projects";
+import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
-import { Switch, Route } from "react-router-dom";
+import TechSkills from "../TechSkills/TechSkills";
 import "./Container.css";
 
 class Container extends Component {
 	render() {
 		const jsx = (
 			<div className="container">
-				<Switch>
-					<Route path="/Contact">
-						<Contact></Contact>
-					</Route>
-					<Route path="/Projects">
-						<Projects></Projects>
-					</Route>
-					<Route path="/">
-						<Home />
-					</Route>
-				</Switch>
+				<Home />
+				<TechSkills />
+				<Portfolio />
+				<Contact />
+				<footer>Desgned And Developed by Emiliano Russo</footer>
 			</div>
 		);
 		return jsx;

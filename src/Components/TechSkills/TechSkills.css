@@ -1,0 +1,23 @@
+.techStack {
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.stack {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 4rem;
+}
+
+.stack * {
+	margin: 0 1rem;
+}
+
+#BackEnd p {
+	color: rgb(127, 58, 218);
+	font-size: 20px;
+	margin: auto;
+}
