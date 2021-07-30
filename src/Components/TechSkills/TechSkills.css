@@ -1,9 +1,10 @@
 .techStack {
-	border: 1px solid white;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	font-size: 25px;
 }
 
 .stack {

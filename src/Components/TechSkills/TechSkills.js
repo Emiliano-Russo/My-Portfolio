@@ -2,9 +2,9 @@ import "./TechSkills.css";
 
 function TechSkills(props) {
 	return (
-		<div className="techStack">
+		<div id="techStack" className="techStack">
 			<h1>Tech Skills</h1>
-			<h2>Front-end Technologies</h2>
+			<h4>Front-end Technologies</h4>
 			<div id="FrontEnd" className="stack">
 				<img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
 				<img src="https://img.icons8.com/color/48/000000/typescript.png" />
@@ -13,14 +13,14 @@ function TechSkills(props) {
 				<img src="https://img.icons8.com/officel/40/000000/react.png" />
 				<img src="https://img.icons8.com/color/48/000000/angularjs.png" />
 			</div>
-			<h2>Back-end Technologies</h2>
+			<h4>Back-end Technologies</h4>
 			<div id="BackEnd" className="stack">
 				<img src="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" />
 				<img src="https://img.icons8.com/color/48/000000/mysql-logo.png" />
 				<img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" />
 				<p>ASP.NET</p>
 			</div>
-			<h2>Game Engine Technologies</h2>
+			<h4>Game Engine Technologies</h4>
 			<div id="GameEngine" className="stack">
 				<img src="https://img.icons8.com/ios/50/000000/unity.png" />
 			</div>

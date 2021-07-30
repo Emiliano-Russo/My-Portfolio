@@ -1,15 +1,14 @@
 import React from "react";
 import "./Nav.css";
-import { Link } from "react-router-dom";
 
 class Nav extends React.Component {
 	render() {
 		const jsx = (
 			<div className="Navegacion">
 				<nav>
-					<Link to="/">Home</Link>
-					<Link to="/Projects">Projects</Link>
-					<Link to="/Contact">Contact</Link>
+					<a href="#techStack">Skills</a>
+					<a href="#portfolio">Porfolio</a>
+					<a href="#contact">Contact Me</a>
 				</nav>
 			</div>
 		);

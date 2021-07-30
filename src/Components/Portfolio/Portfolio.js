@@ -28,7 +28,7 @@ function Portfolio() {
 	}
 
 	return (
-		<div className="Portfolio">
+		<div className="Portfolio" id="portfolio">
 			<h1>Portfolio</h1>
 			{allProjects.length !== 0 ? (
 				allProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />)

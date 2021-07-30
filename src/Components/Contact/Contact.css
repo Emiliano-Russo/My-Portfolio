@@ -1,23 +1,30 @@
-#Contact {
-	height: 100%;
+#contact {
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: flex-start;
-	background: #000000; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-size: 20px;
 }
 
-#Contact img {
+#contact img {
 	max-width: 5rem;
 	margin-right: 1rem;
 	margin-top: 1rem;
 	border: none;
 }
 
+#contact button {
+	transform: rotate(0);
+	margin: 0;
+	width: 400px;
+	font-size: 40px;
+	color: white;
+	border: 1px solid black;
+}
+
 .linkSocial {
-	margin-top: 5rem;
+	margin-top: 5px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -50,24 +57,89 @@
 }
 
 #linkedin {
-	text-decoration: underline;
-	text-decoration-color: turquoise;
-}
-
-#linkedin:hover {
-	color: turquoise;
-}
-
-#github:hover {
-	color: blueviolet;
+	background-color: rgb(39, 137, 254);
+	background: linear-gradient(90deg, rgba(39, 137, 254, 1) 0%, rgba(27, 200, 169, 0.9780287114845938) 100%);
+	border: 1px solid black;
 }
 
 #github {
-	text-decoration: underline;
-	text-decoration-color: blueviolet;
+	background: rgb(133, 39, 254);
+	background: linear-gradient(90deg, rgba(133, 39, 254, 1) 0%, rgba(27, 138, 200, 0.9780287114845938) 100%);
+	border: 1px solid black;
+}
+
+#linkedin:hover {
+	transition: 0.5s;
+	border: 1px solid white;
+}
+
+#github:hover {
+	transition: 0.5s;
+	border: 1px solid white;
+}
+
+#github {
 }
 
 #mail {
-	text-decoration: underline;
-	text-decoration-color: tomato;
+}
+
+#form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 0.5rem;
+	padding: 2rem;
+}
+
+#contact p {
+	margin-top: 5rem;
+}
+
+#form input::placeholder {
+	color: rgb(142, 255, 198);
+}
+#form textarea::placeholder {
+	color: rgb(142, 255, 198);
+}
+
+#form input {
+	font-family: "Roboto Mono", monospace;
+	margin-bottom: 1rem;
+	padding: 5px 10px;
+	width: 400px;
+	height: 30px;
+	color: white;
+	background: rgb(85, 84, 85);
+	border: 1px solid black;
+}
+
+#form textarea {
+	background: rgb(85, 84, 85);
+	color: white;
+	padding: 5px 10px;
+	max-width: 400px;
+	min-width: 400px;
+	min-height: 100px;
+}
+
+#form button {
+	width: 80px;
+	font-size: 19px;
+}
+
+#form #Send {
+	background: violet;
+	width: 200px;
+	padding: 5px 10px;
+	margin: 1rem auto;
+	background: rgb(255, 255, 255);
+	color: black;
+}
+
+#form #Send:hover {
+	transition: 0.33s;
+	background: gray;
+	color: white;
+	cursor: pointer;
+	border: 1px solid white;
 }
