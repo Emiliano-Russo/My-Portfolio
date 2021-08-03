@@ -13,7 +13,7 @@ class Container extends Component {
 				<TechSkills />
 				<Portfolio />
 				<Contact />
-				<footer>Desgned And Developed by Emiliano Russo</footer>
+				<footer>Designed And Developed by Emiliano Russo</footer>
 			</div>
 		);
 		return jsx;
