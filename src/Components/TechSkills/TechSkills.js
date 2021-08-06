@@ -20,9 +20,9 @@ function TechSkills(props) {
 				<img src="https://img.icons8.com/color/48/000000/c-sharp-logo.png" />
 				<p>ASP.NET</p>
 			</div>
-			<h4>Game Engine Technologies</h4>
+			<h4>Game-Engine Technologies</h4>
 			<div id="GameEngine" className="stack">
-				<img src="https://img.icons8.com/ios/50/000000/unity.png" />
+				<img src="https://img.icons8.com/fluency/48/000000/unity.png" />
 			</div>
 		</div>
 	);

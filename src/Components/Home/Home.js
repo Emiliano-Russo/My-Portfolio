@@ -1,14 +1,26 @@
 import React from "react";
 import Photo from "../../Media/myPhoto.jpg";
 import "./HomeStyles.css";
+const axios = require("axios");
 
 //import  myPhoto  from "../../Media/myPhoto.png";
 
 class Home extends React.Component {
 	state = {
-		colorL: "#5DC1B9",
+		colorL: "#FFFFFF",
 		colorX: "#ff6347",
+		aboutMe: "Loading...",
 	};
+
+	componentDidMount() {
+		const link = "https://portfolio-acd2e-default-rtdb.firebaseio.com/Text/aboutMe.json";
+		axios.get(link).then((res) => {
+			console.log(res.data);
+			this.setState({
+				aboutMe: res.data,
+			});
+		});
+	}
 
 	changeColors() {
 		console.log("Changing colors..");
@@ -66,10 +78,7 @@ class Home extends React.Component {
 					>
 						About Me
 					</h4>
-					<p>
-						I am passionate about technology and software development. My experience comes mainly from my university, I also have personal projects that I did in my free time, I have experience in
-						several types of developments: videogames, web, desktop. My way of programming is always following Design Patterns, Clean Code and SOLID.
-					</p>
+					<p>{this.state.aboutMe}</p>
 				</div>
 			</div>
 		);
