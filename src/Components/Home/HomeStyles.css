@@ -58,7 +58,7 @@
 	color: tomato;
 }
 
-button {
+.themeBlack button {
 	width: max-content;
 	height: max-content;
 	margin-top: 2rem;

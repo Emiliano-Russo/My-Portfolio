@@ -9,6 +9,12 @@ html {
 	color: white;
 }
 
+button,
+input,
+textarea {
+	font-family: "Roboto Mono", monospace;
+}
+
 @media only screen and (orientation: portrait) {
 	#root {
 		width: 100%;

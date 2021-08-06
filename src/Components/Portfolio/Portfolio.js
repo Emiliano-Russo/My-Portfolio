@@ -4,7 +4,10 @@ import Project from "./Project/Project";
 import { GetProjectsFromServer, GetProjectsFromCache, SetProjectsOnCache } from "../../Media/Repository";
 
 function Portfolio() {
-	const [allProjects, setAllProjects] = useState([]);
+	const [unityProjectsOpen, setUnityProjectsOpen] = useState(false);
+	const [webProjectsOpen, setWebProjectsOpen] = useState(true);
+	const [unityProjects, setUnityProjects] = useState([]);
+	const [webProjects, setWebProjects] = useState([]);
 
 	useEffect(() => {
 		let projects = GetProjectsFromCache();
@@ -20,20 +23,60 @@ function Portfolio() {
 	}, []);
 
 	function processDataProjects(data) {
-		let projects = allProjects.splice(0, 0); // copy
+		let projects = [];
 		Object.keys(data).forEach(function (key) {
 			projects.push(data[key]);
 		});
-		setAllProjects(projects);
+		for (let i = 0; i < projects.length; i++) {
+			const project = projects[i];
+			if (project.typeOfProject === "Unity") {
+				setUnityProjects((prev) => prev.concat(project));
+			} else {
+				//addToWebProjects(project);
+				setWebProjects((prev) => prev.concat(project));
+			}
+		}
+	}
+
+	function toggleWebProjectHandler() {
+		setWebProjectsOpen((prev) => !prev);
+	}
+
+	function toggleUnityProjectHandler() {
+		setUnityProjectsOpen((prev) => !prev);
 	}
 
 	return (
 		<div className="Portfolio" id="portfolio">
 			<h1>Portfolio</h1>
-			{allProjects.length !== 0 ? (
-				allProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />)
+			{webProjectsOpen ? (
+				<button className="toggle" onClick={toggleWebProjectHandler}>
+					Web Projects △
+				</button>
 			) : (
-				<h1>Loading...</h1>
+				<button className="toggle" onClick={toggleWebProjectHandler}>
+					Web Projects ▽
+				</button>
+			)}
+			{webProjects.length !== 0 && webProjectsOpen == true ? (
+				webProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />)
+			) : (
+				<br></br>
+			)}
+
+			{unityProjectsOpen ? (
+				<button className="toggle" onClick={toggleUnityProjectHandler}>
+					Unity Projects △
+				</button>
+			) : (
+				<button className="toggle" onClick={toggleUnityProjectHandler}>
+					Unity Projects ▽
+				</button>
+			)}
+			{unityProjects.length !== 0 && unityProjectsOpen == true ? (
+				unityProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />)
+			) : (
+				<br></br>
 			)}
 		</div>
 	);
