@@ -5,6 +5,8 @@
 	align-items: center;
 	justify-content: flex-start;
 	font-size: 20px;
+	max-width: 50rem;
+	margin: 10rem auto 0 auto;
 }
 
 #contact img {
@@ -89,6 +91,7 @@
 	flex-direction: column;
 	margin-top: 0.5rem;
 	padding: 2rem;
+	max-width: 80%;
 }
 
 #contact p {
@@ -97,10 +100,10 @@
 }
 
 #form input::placeholder {
-	color: rgb(142, 255, 198);
+	color: rgb(200, 201, 197);
 }
 #form textarea::placeholder {
-	color: rgb(142, 255, 198);
+	color: rgb(200, 201, 197);
 }
 
 #form input {
