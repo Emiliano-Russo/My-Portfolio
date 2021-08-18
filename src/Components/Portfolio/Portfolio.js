@@ -46,38 +46,36 @@ function Portfolio() {
 		setUnityProjectsOpen((prev) => !prev);
 	}
 
+	const toggleWeb = webProjectsOpen ? (
+		<button className="toggle" onClick={toggleWebProjectHandler}>
+			Web Projects △
+		</button>
+	) : (
+		<button className="toggle" onClick={toggleWebProjectHandler}>
+			Web Projects ▽
+		</button>
+	);
+
+	const toggleUnity = unityProjectsOpen ? (
+		<button className="toggle" onClick={toggleUnityProjectHandler}>
+			Unity Projects △
+		</button>
+	) : (
+		<button className="toggle" onClick={toggleUnityProjectHandler}>
+			Unity Projects ▽
+		</button>
+	);
+
+	const wbProjects = webProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />);
+	const gamesProjects = unityProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />);
+
 	return (
 		<div className="Portfolio" id="portfolio">
 			<h1>Portfolio</h1>
-			{webProjectsOpen ? (
-				<button className="toggle" onClick={toggleWebProjectHandler}>
-					Web Projects △
-				</button>
-			) : (
-				<button className="toggle" onClick={toggleWebProjectHandler}>
-					Web Projects ▽
-				</button>
-			)}
-			{webProjects.length !== 0 && webProjectsOpen == true ? (
-				webProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />)
-			) : (
-				<br></br>
-			)}
-
-			{unityProjectsOpen ? (
-				<button className="toggle" onClick={toggleUnityProjectHandler}>
-					Unity Projects △
-				</button>
-			) : (
-				<button className="toggle" onClick={toggleUnityProjectHandler}>
-					Unity Projects ▽
-				</button>
-			)}
-			{unityProjects.length !== 0 && unityProjectsOpen == true ? (
-				unityProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />)
-			) : (
-				<br></br>
-			)}
+			{toggleWeb}
+			<div className="Projects">{webProjects.length !== 0 && webProjectsOpen == true ? wbProjects : <br></br>}</div>
+			{toggleUnity}
+			<div className="Projects">{unityProjects.length !== 0 && unityProjectsOpen == true ? gamesProjects : <br></br>}</div>
 		</div>
 	);
 }

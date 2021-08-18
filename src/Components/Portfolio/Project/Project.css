@@ -3,76 +3,75 @@
 }
 
 .Project {
-	margin: 2rem 0;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
 	padding: 10px;
-	width: 60%;
-	background-color: rgb(33, 55, 119);
+	border: 1px solid white;
+	margin-top: 6rem;
+	margin-left: 6rem;
 	border-radius: 10px;
+	background-image: linear-gradient(135deg, #040f1f 10%, #bb2a36 100%);
+}
+
+.Project h1 {
+	margin: 0;
 }
 
 .Project img {
-	width: 350px;
-	height: 350px;
 	display: inline-block;
 	position: relative;
-	left: -80px;
-	top: -20px;
-	box-shadow: 0 0 10px #1091fa, 0 0 20px #050507;
-	border-radius: 5px;
+	top: -3rem;
+	left: -3rem;
+	margin: 0;
+	width: 350px;
+	height: 350px;
+	border-radius: 10px;
+	border: 1px solid white;
 }
 
-.Project p {
-	color: rgb(206, 202, 202);
-}
-
-.Project #Content {
+#Content {
+	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	width: 880px;
-	padding: 0px 20px;
-	height: 350px;
-	text-align: center;
+	width: 350px;
 }
 
-.Project #Content button {
+#Content button {
 	background-color: royalblue;
 	color: white;
-	border: 1px solid royalblue;
-	padding: 2px 20px;
-	margin: auto;
 	width: 100px;
+	border: 1px solid black;
+	border-radius: 10px;
 }
 
-.Project #Content button:hover {
-	transition: 0.3s;
-	background-color: transparent;
+#Content button:hover {
+	border-color: white;
 }
 
-@media only screen and (orientation: portrait) {
-	.Project {
-		flex-direction: column;
-		width: 80%;
-		height: 30rem;
-		margin-bottom: 1rem;
-		border: 1px solid white;
+@media (orientation: portrait) {
+	.Project img {
+		left: 0;
 	}
 
-	#Content h1 {
-		margin: 0;
+	.Project {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+}
+
+@media (max-width: 390px) {
+	.Project img {
+		width: 175px;
+		height: 175px;
+	}
+	.Project {
+		width: 175px;
 		font-size: 15px;
 	}
 
-	.Project img {
-		display: none;
-	}
-
-	.Project p {
-		width: 200px;
+	#Content {
+		width: inherit;
 	}
 }
