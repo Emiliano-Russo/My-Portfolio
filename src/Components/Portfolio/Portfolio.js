@@ -58,11 +58,11 @@ function Portfolio() {
 
 	const toggleUnity = gamesProjectsOpen ? (
 		<button className="toggle" onClick={toggleGamesProjectHandler}>
-			Games Projects △
+			Game Projects △
 		</button>
 	) : (
 		<button className="toggle" onClick={toggleGamesProjectHandler}>
-			Games Projects ▽
+			Game Projects ▽
 		</button>
 	);
 
