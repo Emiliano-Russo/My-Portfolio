@@ -12,7 +12,9 @@ function Project(props) {
 			<div id="Content">
 				<h1>{props.name}</h1>
 				<p>{props.description}</p>
-				<p>Type of project: {props.typeOfProject}</p>
+				<p>
+					Made in <b>{props.typeOfProject}</b>
+				</p>
 				<div>
 					<button onClick={() => openInNewTab(props.link)}>Link</button>
 				</div>

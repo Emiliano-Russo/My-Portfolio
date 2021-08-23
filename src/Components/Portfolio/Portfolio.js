@@ -4,9 +4,9 @@ import Project from "./Project/Project";
 import { GetProjectsFromServer, GetProjectsFromCache, SetProjectsOnCache } from "../../Media/Repository";
 
 function Portfolio() {
-	const [unityProjectsOpen, setUnityProjectsOpen] = useState(false);
+	const [gamesProjectsOpen, setGamesProjectsOpen] = useState(false);
 	const [webProjectsOpen, setWebProjectsOpen] = useState(true);
-	const [unityProjects, setUnityProjects] = useState([]);
+	const [gamesProjects, setGamesProjects] = useState([]);
 	const [webProjects, setWebProjects] = useState([]);
 
 	useEffect(() => {
@@ -30,7 +30,7 @@ function Portfolio() {
 		for (let i = 0; i < projects.length; i++) {
 			const project = projects[i];
 			if (project.typeOfProject === "Unity") {
-				setUnityProjects((prev) => prev.concat(project));
+				setGamesProjects((prev) => prev.concat(project));
 			} else {
 				//addToWebProjects(project);
 				setWebProjects((prev) => prev.concat(project));
@@ -42,8 +42,8 @@ function Portfolio() {
 		setWebProjectsOpen((prev) => !prev);
 	}
 
-	function toggleUnityProjectHandler() {
-		setUnityProjectsOpen((prev) => !prev);
+	function toggleGamesProjectHandler() {
+		setGamesProjectsOpen((prev) => !prev);
 	}
 
 	const toggleWeb = webProjectsOpen ? (
@@ -56,18 +56,20 @@ function Portfolio() {
 		</button>
 	);
 
-	const toggleUnity = unityProjectsOpen ? (
-		<button className="toggle" onClick={toggleUnityProjectHandler}>
-			Unity Projects △
+	const toggleUnity = gamesProjectsOpen ? (
+		<button className="toggle" onClick={toggleGamesProjectHandler}>
+			Games Projects △
 		</button>
 	) : (
-		<button className="toggle" onClick={toggleUnityProjectHandler}>
-			Unity Projects ▽
+		<button className="toggle" onClick={toggleGamesProjectHandler}>
+			Games Projects ▽
 		</button>
 	);
 
 	const wbProjects = webProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />);
-	const gamesProjects = unityProjects.map((item) => <Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />);
+	const videogamesProjects = gamesProjects.map((item) => (
+		<Project key={item.name} img={item.img} description={item.description} link={item.link} name={item.name} typeOfProject={item.typeOfProject} />
+	));
 
 	return (
 		<div className="Portfolio" id="portfolio">
@@ -75,7 +77,7 @@ function Portfolio() {
 			{toggleWeb}
 			<div className="Projects">{webProjects.length !== 0 && webProjectsOpen == true ? wbProjects : <br></br>}</div>
 			{toggleUnity}
-			<div className="Projects">{unityProjects.length !== 0 && unityProjectsOpen == true ? gamesProjects : <br></br>}</div>
+			<div className="Projects">{gamesProjects.length !== 0 && gamesProjectsOpen == true ? videogamesProjects : <br></br>}</div>
 		</div>
 	);
 }
