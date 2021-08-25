@@ -13,7 +13,7 @@ function Project(props) {
 				<h1>{props.name}</h1>
 				<p>{props.description}</p>
 				<p>
-					Made in <b>{props.typeOfProject}</b>
+					Made with <b>{props.typeOfProject}</b>
 				</p>
 				<div>
 					<button onClick={() => openInNewTab(props.link)}>Link</button>
