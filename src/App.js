@@ -5,8 +5,8 @@ import "./App.css";
 function App() {
 	return (
 		<div id="App">
-			<Nav></Nav>
-			<Container></Container>
+			<h1>New Portfolio :)</h1>
+			<a href="https://www.russoemiliano.com/">Click here</a>
 		</div>
 	);
 }
